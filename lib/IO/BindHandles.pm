@@ -6,7 +6,6 @@ use warnings;
 use IO::Handle;
 use IO::Select;
 
-
 sub new {
     my $class = shift;
     $class = ref $class || $class;
@@ -175,7 +174,8 @@ sub timeout {
 
 1;
 
-__END__
+
+
 =pod
 
 =head1 NAME
@@ -184,7 +184,7 @@ IO::BindHandles - Bind a set of handles for buffered tunneling
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -198,11 +198,11 @@ Simple usage:
       $r2, $w2, # read from $r2, write to $r2
     ]
   );
-
-More complex scenario with non-blocking calls
-
+  
   # block until the handles close themselves
   $bh->loop;
+
+More complex scenario with non-blocking calls
 
   # connect STDIN and STDOUT to a socket in non-blocking way
   $socket->blocking(0);
@@ -229,7 +229,7 @@ More complex scenario with non-blocking calls
 
 This module implements a buffered tunneling between a set of arbitrary
 IO handles. It basically implements a select loop on a set of handles,
-reading and writing from them using a internal buffer.
+reading and writing from them using an internal buffer.
 
 This replicates what a dup or fdopen call would do when you can't
 actually do it, i.e.: attach STDIN/STDOUT to a socket or attach two
@@ -323,3 +323,5 @@ the same terms as the Perl 5 programming language system itself.
 
 =cut
 
+
+__END__
