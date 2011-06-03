@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
     'IO::Handle' => '0',
     'IO::Select' => '0'
   },
-  'VERSION' => '0.003',
+  'VERSION' => '0.004',
   'test' => {
     'TESTS' => 't/*.t'
   }
