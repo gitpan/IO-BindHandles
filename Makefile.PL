@@ -9,23 +9,23 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Bind a set of handles for buffered tunneling',
-  'AUTHOR' => 'Daniel Ruoso <daniel@ruoso.com>',
-  'BUILD_REQUIRES' => {},
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "ABSTRACT" => "Bind a set of handles for buffered tunneling",
+  "AUTHOR" => "Daniel Ruoso <daniel\@ruoso.com>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'IO-BindHandles',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'IO::BindHandles',
-  'PREREQ_PM' => {
-    'IO::Handle' => '0',
-    'IO::Select' => '0'
+  "DISTNAME" => "IO-BindHandles",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "IO::BindHandles",
+  "PREREQ_PM" => {
+    "IO::Handle" => 0,
+    "IO::Select" => 0
   },
-  'VERSION' => '0.005',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.006",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

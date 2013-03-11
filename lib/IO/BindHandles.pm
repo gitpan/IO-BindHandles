@@ -174,7 +174,7 @@ sub timeout {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -184,7 +184,7 @@ IO::BindHandles - Bind a set of handles for buffered tunneling
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
@@ -322,6 +322,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
